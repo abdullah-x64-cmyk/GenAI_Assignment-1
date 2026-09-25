@@ -1,0 +1,11 @@
+.venv/
+.git/
+__pycache__/
+*.pyc
+notebooks/
+experiments/
+reports/
+data/fs2k_download/
+data/fs2k_prepared/
+app/node_modules/
+app/dist/
