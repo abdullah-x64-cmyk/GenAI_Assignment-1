@@ -1,0 +1,12 @@
+{
+  "dataset": "Oxford-IIIT Pet",
+  "seed": 42,
+  "train_count": 2944,
+  "val_count": 736,
+  "test_count": 3669,
+  "train_fraction": 0.8,
+  "val_fraction": 0.2,
+  "same_split_for_tasks_1_2_3": true,
+  "data_root": "C:\\Users\\abdul\\OneDrive\\Documents\\7thsemester\\gen ai\\ass1\\data\\oxford_iiit_pet",
+  "split_dir": "C:\\Users\\abdul\\OneDrive\\Documents\\7thsemester\\gen ai\\ass1\\data\\oxford_iiit_pet_splits"
+}
