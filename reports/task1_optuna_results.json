@@ -1,0 +1,95 @@
+{
+  "search_space": {
+    "learning_rate": "float [1e-4, 1e-3], log scale",
+    "batch_size": "categorical [8, 16, 32]",
+    "latent_dim": "categorical [64, 128, 256]",
+    "base_channels": "categorical [16, 32, 48]",
+    "dropout": "float [0.0, 0.3]",
+    "alpha": "float [0.5, 0.95]"
+  },
+  "number_of_trials_requested": 3,
+  "number_of_completed_trials": 3,
+  "image_size": 64,
+  "max_train_batches": 8,
+  "max_val_batches": 4,
+  "best_trial": 0,
+  "best_validation_loss": 0.28047236055135727,
+  "best_parameters": {
+    "learning_rate": 0.00023688639503640813,
+    "batch_size": 8,
+    "latent_dim": 64,
+    "base_channels": 16,
+    "dropout": 0.006175348288740734,
+    "alpha": 0.9364594334728974
+  },
+  "best_validation_results": {
+    "loss": 0.28047236055135727,
+    "l1": 0.2500127740204334,
+    "ssim": 0.270614817738533
+  },
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "value": 0.28047236055135727,
+      "params": {
+        "learning_rate": 0.00023688639503640813,
+        "batch_size": 8,
+        "latent_dim": 64,
+        "base_channels": 16,
+        "dropout": 0.006175348288740734,
+        "alpha": 0.9364594334728974
+      },
+      "user_attrs": {
+        "train_loss": 0.26277220249176025,
+        "validation": {
+          "loss": 0.28047236055135727,
+          "l1": 0.2500127740204334,
+          "ssim": 0.270614817738533
+        }
+      }
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "value": 0.409374438226223,
+      "params": {
+        "learning_rate": 0.0006798962421591129,
+        "batch_size": 8,
+        "latent_dim": 128,
+        "base_channels": 32,
+        "dropout": 0.08764339456056544,
+        "alpha": 0.6648628294821612
+      },
+      "user_attrs": {
+        "train_loss": 0.39015671238303185,
+        "validation": {
+          "loss": 0.409374438226223,
+          "l1": 0.24830615147948265,
+          "ssim": 0.27108975127339363
+        }
+      }
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "value": 0.3131568282842636,
+      "params": {
+        "learning_rate": 0.0002858051065806936,
+        "batch_size": 8,
+        "latent_dim": 256,
+        "base_channels": 48,
+        "dropout": 0.2896896099223678,
+        "alpha": 0.8637788066524075
+      },
+      "user_attrs": {
+        "train_loss": 0.2838096544146538,
+        "validation": {
+          "loss": 0.3131568282842636,
+          "l1": 0.24762047082185745,
+          "ssim": 0.271277092397213
+        }
+      }
+    }
+  ]
+}

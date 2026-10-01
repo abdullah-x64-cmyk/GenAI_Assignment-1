@@ -1,0 +1,111 @@
+{
+  "temperature": 0.782423925179191,
+  "max_per_group": 8,
+  "sample_count": 80,
+  "groups": {
+    "clean/all": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24508368968963623,
+        "Salt": 0.23512254655361176,
+        "Blur": 0.2646585702896118,
+        "Occlusion": 0.255135178565979
+      }
+    },
+    "gaussian_blur/high": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.2450549304485321,
+        "Salt": 0.23504389822483063,
+        "Blur": 0.2648555636405945,
+        "Occlusion": 0.255045622587204
+      }
+    },
+    "gaussian_blur/low": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24506905674934387,
+        "Salt": 0.2351032942533493,
+        "Blur": 0.26472505927085876,
+        "Occlusion": 0.25510257482528687
+      }
+    },
+    "gaussian_blur/medium": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24506163597106934,
+        "Salt": 0.23507235944271088,
+        "Blur": 0.2647963762283325,
+        "Occlusion": 0.25506964325904846
+      }
+    },
+    "rectangular_occlusion/high": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.2456033080816269,
+        "Salt": 0.2349531054496765,
+        "Blur": 0.26384398341178894,
+        "Occlusion": 0.25559961795806885
+      }
+    },
+    "rectangular_occlusion/low": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.2451075166463852,
+        "Salt": 0.2351195365190506,
+        "Blur": 0.2646476626396179,
+        "Occlusion": 0.2551252841949463
+      }
+    },
+    "rectangular_occlusion/medium": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.2452552616596222,
+        "Salt": 0.2349889874458313,
+        "Blur": 0.26435181498527527,
+        "Occlusion": 0.25540396571159363
+      }
+    },
+    "salt_and_pepper/high": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24471110105514526,
+        "Salt": 0.23527702689170837,
+        "Blur": 0.26443520188331604,
+        "Occlusion": 0.2555766701698303
+      }
+    },
+    "salt_and_pepper/low": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24505797028541565,
+        "Salt": 0.2351759672164917,
+        "Blur": 0.26452887058258057,
+        "Occlusion": 0.2552371621131897
+      }
+    },
+    "salt_and_pepper/medium": {
+      "sample_count": 8,
+      "average_weights": {
+        "Clean": 0.24489286541938782,
+        "Salt": 0.23519901931285858,
+        "Blur": 0.26440349221229553,
+        "Occlusion": 0.25550463795661926
+      }
+    }
+  },
+  "overall_average_weights": {
+    "Clean": 0.2450897991657257,
+    "Salt": 0.23510555922985077,
+    "Blur": 0.2645246386528015,
+    "Occlusion": 0.255280077457428
+  },
+  "dominant_expert_share": 0.0,
+  "multiple_expert_share": 1.0,
+  "inactivity_threshold": 0.05,
+  "inactive_experts": [],
+  "heatmap": "reports\\task3_routing_analysis\\routing_heatmap.png",
+  "weight_distribution": "reports\\task3_routing_analysis\\weight_distributions.png",
+  "dominant_examples": "reports\\task3_routing_analysis\\dominant_examples",
+  "multiple_expert_examples": "reports\\task3_routing_analysis\\multiple_expert_examples"
+}

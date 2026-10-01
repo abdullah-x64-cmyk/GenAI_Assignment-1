@@ -1,0 +1,55 @@
+{
+  "checkpoint": "task4_face_sketch\\checkpoints\\conditional_gan_best.pt",
+  "onnx_model": "task4_face_sketch\\checkpoints\\generator.onnx",
+  "input_photo_shape": [
+    1,
+    3,
+    128,
+    128
+  ],
+  "input_style_shape": [
+    1
+  ],
+  "style_results": {
+    "0": {
+      "output_shape": [
+        1,
+        3,
+        128,
+        128
+      ],
+      "max_absolute_difference": 7.327646017074585e-06,
+      "mean_absolute_difference": 8.415374850301305e-07,
+      "allclose": true
+    },
+    "1": {
+      "output_shape": [
+        1,
+        3,
+        128,
+        128
+      ],
+      "max_absolute_difference": 7.91996717453003e-06,
+      "mean_absolute_difference": 8.546471690351609e-07,
+      "allclose": true
+    },
+    "2": {
+      "output_shape": [
+        1,
+        3,
+        128,
+        128
+      ],
+      "max_absolute_difference": 8.419156074523926e-06,
+      "mean_absolute_difference": 8.440224519290496e-07,
+      "allclose": true
+    }
+  },
+  "opset_version": 17,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "rtol": 0.0001,
+  "atol": 1e-05,
+  "allclose": true
+}

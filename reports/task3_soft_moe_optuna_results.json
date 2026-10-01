@@ -1,0 +1,95 @@
+{
+  "search_space": {
+    "lambda_rec": "float [0.5, 2.0]",
+    "lambda_ssim": "float [0.5, 2.0]",
+    "lambda_cls": "float [0.01, 0.5]",
+    "lambda_bal": "float [1e-4, 0.2], log scale",
+    "temperature": "float [0.25, 2.0]",
+    "joint_learning_rate": "float [1e-6, 1e-4], log scale"
+  },
+  "number_of_trials_requested": 3,
+  "number_of_completed_trials": 3,
+  "image_size": 64,
+  "batch_size": 8,
+  "max_batches": 1,
+  "initialization": "Task 2 classifier and three Task 2 specialists",
+  "best_trial": 2,
+  "best_joint_loss": 0.8252863883972168,
+  "best_parameters": {
+    "lambda_rec": 1.7486639612006325,
+    "lambda_ssim": 0.8185086660174142,
+    "lambda_cls": 0.0990942339314793,
+    "lambda_bal": 0.00040311020093778354,
+    "temperature": 0.782423925179191,
+    "joint_learning_rate": 1.120760621186056e-05
+  },
+  "best_joint_metrics": {
+    "loss": 0.8252863883972168,
+    "l1": 0.15624220669269562,
+    "ssim_loss": 0.5421473979949951,
+    "classification": 1.0930837392807007,
+    "balance": 0.0015396862290799618
+  },
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "value": 1.611918330192566,
+      "parameters": {
+        "lambda_rec": 1.0618101782710436,
+        "lambda_ssim": 1.9260714596148742,
+        "lambda_cls": 0.3686770314875885,
+        "lambda_bal": 0.00946650379847817,
+        "temperature": 0.5230326207742639,
+        "joint_learning_rate": 2.0511104188433975e-06
+      },
+      "joint_metrics": {
+        "loss": 1.611918330192566,
+        "l1": 0.15878500044345856,
+        "ssim_loss": 0.5400688648223877,
+        "classification": 1.0932607650756836,
+        "balance": 0.005021051503717899
+      }
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "value": 1.4184716939926147,
+      "parameters": {
+        "lambda_rec": 0.5871254182522991,
+        "lambda_ssim": 1.7992642186624028,
+        "lambda_cls": 0.3045463557541723,
+        "lambda_bal": 0.021745470981373614,
+        "temperature": 0.2860228650176543,
+        "joint_learning_rate": 8.706020878304853e-05
+      },
+      "joint_metrics": {
+        "loss": 1.4184716939926147,
+        "l1": 0.16111810505390167,
+        "ssim_loss": 0.5518801212310791,
+        "classification": 1.0861097574234009,
+        "balance": 0.005805659107863903
+      }
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "value": 0.8252863883972168,
+      "parameters": {
+        "lambda_rec": 1.7486639612006325,
+        "lambda_ssim": 0.8185086660174142,
+        "lambda_cls": 0.0990942339314793,
+        "lambda_bal": 0.00040311020093778354,
+        "temperature": 0.782423925179191,
+        "joint_learning_rate": 1.120760621186056e-05
+      },
+      "joint_metrics": {
+        "loss": 0.8252863883972168,
+        "l1": 0.15624220669269562,
+        "ssim_loss": 0.5421473979949951,
+        "classification": 1.0930837392807007,
+        "balance": 0.0015396862290799618
+      }
+    }
+  ]
+}

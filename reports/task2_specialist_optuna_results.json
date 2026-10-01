@@ -1,0 +1,179 @@
+{
+  "search_space": {
+    "learning_rate": "float [1e-4, 1e-3], log scale",
+    "bottleneck": "categorical [32, 64, 128]",
+    "channels": "categorical [16, 32, 48] base channels; encoder is [base, 2*base, 4*base, 8*base]",
+    "batch_size": "categorical [4, 8, 16]",
+    "alpha": "float [0.5, 0.95] for alpha*L1 + (1-alpha)*(1-SSIM)"
+  },
+  "number_of_trials_requested": 3,
+  "number_of_completed_trials": 3,
+  "epochs_per_trial": 1,
+  "image_size": 64,
+  "max_train_batches": 1,
+  "max_val_batches": 1,
+  "optimization_objective": "mean validation loss across salt, blur, and occlusion specialists",
+  "best_trial": 2,
+  "best_mean_validation_loss": 0.49047399560610455,
+  "best_shared_parameters": {
+    "learning_rate": 0.00019594972058679176,
+    "bottleneck": 128,
+    "channels": 48,
+    "batch_size": 8,
+    "alpha": 0.5292732168433758
+  },
+  "best_specialist_validation": {
+    "salt": {
+      "train_loss": 0.4964584708213806,
+      "validation": {
+        "loss": 0.4906414747238159,
+        "l1": 0.2426355928182602,
+        "ssim": 0.2305070012807846
+      },
+      "device": "cpu"
+    },
+    "blur": {
+      "train_loss": 0.50714510679245,
+      "validation": {
+        "loss": 0.49033862352371216,
+        "l1": 0.24269628524780273,
+        "ssim": 0.23121865093708038
+      },
+      "device": "cpu"
+    },
+    "occlusion": {
+      "train_loss": 0.47761183977127075,
+      "validation": {
+        "loss": 0.4904418885707855,
+        "l1": 0.24231582880020142,
+        "ssim": 0.23057150840759277
+      },
+      "device": "cpu"
+    }
+  },
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "mean_validation_loss": 0.5173173944155375,
+      "parameters": {
+        "learning_rate": 0.00023688639503640813,
+        "bottleneck": 32,
+        "channels": 16,
+        "batch_size": 4,
+        "alpha": 0.5092630224331111
+      },
+      "specialists": {
+        "salt": {
+          "train_loss": 0.46719881892204285,
+          "validation": {
+            "loss": 0.5161280632019043,
+            "l1": 0.2594563066959381,
+            "ssim": 0.21751053631305695
+          },
+          "device": "cpu"
+        },
+        "blur": {
+          "train_loss": 0.5049716234207153,
+          "validation": {
+            "loss": 0.5181347131729126,
+            "l1": 0.2613113820552826,
+            "ssim": 0.2153465747833252
+          },
+          "device": "cpu"
+        },
+        "occlusion": {
+          "train_loss": 0.4894028902053833,
+          "validation": {
+            "loss": 0.5176894068717957,
+            "l1": 0.2597227394580841,
+            "ssim": 0.21460537612438202
+          },
+          "device": "cpu"
+        }
+      }
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "mean_validation_loss": 0.4925854603449504,
+      "parameters": {
+        "learning_rate": 0.0009330606024425672,
+        "bottleneck": 32,
+        "channels": 48,
+        "batch_size": 16,
+        "alpha": 0.5627722372934189
+      },
+      "specialists": {
+        "salt": {
+          "train_loss": 0.46313580870628357,
+          "validation": {
+            "loss": 0.49129801988601685,
+            "l1": 0.2600708305835724,
+            "ssim": 0.21108080446720123
+          },
+          "device": "cpu"
+        },
+        "blur": {
+          "train_loss": 0.5065023303031921,
+          "validation": {
+            "loss": 0.4942222237586975,
+            "l1": 0.26429012417793274,
+            "ssim": 0.20982347428798676
+          },
+          "device": "cpu"
+        },
+        "occlusion": {
+          "train_loss": 0.4798596501350403,
+          "validation": {
+            "loss": 0.4922361373901367,
+            "l1": 0.26128196716308594,
+            "ssim": 0.21049410104751587
+          },
+          "device": "cpu"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "mean_validation_loss": 0.49047399560610455,
+      "parameters": {
+        "learning_rate": 0.00019594972058679176,
+        "bottleneck": 128,
+        "channels": 48,
+        "batch_size": 8,
+        "alpha": 0.5292732168433758
+      },
+      "specialists": {
+        "salt": {
+          "train_loss": 0.4964584708213806,
+          "validation": {
+            "loss": 0.4906414747238159,
+            "l1": 0.2426355928182602,
+            "ssim": 0.2305070012807846
+          },
+          "device": "cpu"
+        },
+        "blur": {
+          "train_loss": 0.50714510679245,
+          "validation": {
+            "loss": 0.49033862352371216,
+            "l1": 0.24269628524780273,
+            "ssim": 0.23121865093708038
+          },
+          "device": "cpu"
+        },
+        "occlusion": {
+          "train_loss": 0.47761183977127075,
+          "validation": {
+            "loss": 0.4904418885707855,
+            "l1": 0.24231582880020142,
+            "ssim": 0.23057150840759277
+          },
+          "device": "cpu"
+        }
+      }
+    }
+  ]
+}

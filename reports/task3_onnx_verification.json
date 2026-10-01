@@ -1,0 +1,34 @@
+{
+  "checkpoint": "task3_soft_moe\\checkpoints\\soft_moe_best.pt",
+  "onnx_model": "task3_soft_moe\\checkpoints\\soft_moe.onnx",
+  "input_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "restored_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "routing_weights_shape": [
+    1,
+    4
+  ],
+  "temperature": 1.0,
+  "opset_version": 17,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "restored_max_absolute_difference": 1.1920928955078125e-07,
+  "restored_mean_absolute_difference": 7.004322011283648e-09,
+  "weights_max_absolute_difference": 0.0,
+  "weights_mean_absolute_difference": 0.0,
+  "rtol": 0.0001,
+  "atol": 1e-05,
+  "restored_allclose": true,
+  "weights_allclose": true,
+  "allclose": true
+}

@@ -1,0 +1,29 @@
+{
+  "model": "UniversalAutoencoder",
+  "config_source": "reports\\task1_optuna_results.json",
+  "selected_parameters": {
+    "learning_rate": 0.00023688639503640813,
+    "batch_size": 8,
+    "latent_dim": 64,
+    "base_channels": 16,
+    "dropout": 0.006175348288740734,
+    "alpha": 0.9364594334728974
+  },
+  "epochs": 1,
+  "image_size": 64,
+  "max_train_batches": 1,
+  "max_val_batches": 1,
+  "device": "cpu",
+  "seed": 42,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.26206910610198975,
+      "val_loss": 0.2745099365711212,
+      "val_l1": 0.24134594202041626,
+      "val_ssim": 0.23671983182430267
+    }
+  ],
+  "best_validation_loss": 0.2745099365711212,
+  "best_checkpoint": "task1_universal/checkpoints/universal_autoencoder_best.pt"
+}

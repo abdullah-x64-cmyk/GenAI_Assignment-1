@@ -1,0 +1,90 @@
+{
+  "input_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "opset_version": 17,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "models": {
+    "classifier": {
+      "onnx_model": "task2_hard_routing\\checkpoints\\onnx\\classifier.onnx",
+      "pytorch_shape": [
+        1,
+        4
+      ],
+      "onnx_shape": [
+        1,
+        4
+      ],
+      "max_absolute_difference": 1.862645149230957e-09,
+      "mean_absolute_difference": 9.313225746154785e-10,
+      "rtol": 0.0001,
+      "atol": 1e-05,
+      "allclose": true
+    },
+    "salt_expert": {
+      "onnx_model": "task2_hard_routing\\checkpoints\\onnx\\salt_expert.onnx",
+      "pytorch_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "onnx_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "max_absolute_difference": 1.1920928955078125e-07,
+      "mean_absolute_difference": 9.730380945427441e-09,
+      "rtol": 0.0001,
+      "atol": 1e-05,
+      "allclose": true
+    },
+    "blur_expert": {
+      "onnx_model": "task2_hard_routing\\checkpoints\\onnx\\blur_expert.onnx",
+      "pytorch_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "onnx_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "max_absolute_difference": 1.1920928955078125e-07,
+      "mean_absolute_difference": 9.83466907911179e-09,
+      "rtol": 0.0001,
+      "atol": 1e-05,
+      "allclose": true
+    },
+    "occlusion_expert": {
+      "onnx_model": "task2_hard_routing\\checkpoints\\onnx\\occlusion_expert.onnx",
+      "pytorch_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "onnx_shape": [
+        1,
+        3,
+        64,
+        64
+      ],
+      "max_absolute_difference": 1.1920928955078125e-07,
+      "mean_absolute_difference": 1.015238648705008e-08,
+      "rtol": 0.0001,
+      "atol": 1e-05,
+      "allclose": true
+    }
+  }
+}

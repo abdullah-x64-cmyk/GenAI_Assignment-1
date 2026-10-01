@@ -1,0 +1,1007 @@
+{
+  "checkpoint_directory": "task2_hard_routing\\checkpoints",
+  "manifest": "data\\oxford_iiit_pet_splits\\test_corruption_manifest.json",
+  "max_per_group": 8,
+  "sample_count": 80,
+  "oracle_metrics": {
+    "overall": {
+      "loss": 0.4098661490198589,
+      "l1": 0.21086946930736303,
+      "ssim": 0.36638704799115657
+    },
+    "by_group": {
+      "clean/all": {
+        "loss": 1.2976594997044723e-07,
+        "l1": 0.0,
+        "ssim": 0.9999997243285179
+      },
+      "gaussian_blur/high": {
+        "loss": 0.45540661031020196,
+        "l1": 0.23429984785616398,
+        "ssim": 0.29598657228052616
+      },
+      "gaussian_blur/low": {
+        "loss": 0.45540660537657385,
+        "l1": 0.23429985344409943,
+        "ssim": 0.2959865890443325
+      },
+      "gaussian_blur/medium": {
+        "loss": 0.4554065720582894,
+        "l1": 0.23429985344409943,
+        "ssim": 0.2959866598248482
+      },
+      "rectangular_occlusion/high": {
+        "loss": 0.4554065403914412,
+        "l1": 0.2342983391135931,
+        "ssim": 0.29598502442240715
+      },
+      "rectangular_occlusion/low": {
+        "loss": 0.45540656252946765,
+        "l1": 0.2342983428388834,
+        "ssim": 0.2959849815815687
+      },
+      "rectangular_occlusion/medium": {
+        "loss": 0.45540656932574086,
+        "l1": 0.2342983391135931,
+        "ssim": 0.2959849629551172
+      },
+      "salt_and_pepper/high": {
+        "loss": 0.4554072806756896,
+        "l1": 0.23430003598332405,
+        "ssim": 0.295985359698534
+      },
+      "salt_and_pepper/low": {
+        "loss": 0.45540730095107085,
+        "l1": 0.2343000378459692,
+        "ssim": 0.29598531872034073
+      },
+      "salt_and_pepper/medium": {
+        "loss": 0.45540731881416374,
+        "l1": 0.23430004343390465,
+        "ssim": 0.2959852870553732
+      }
+    }
+  },
+  "predicted_metrics": {
+    "overall": {
+      "loss": 0.45540662331907356,
+      "l1": 0.23429984990507363,
+      "ssim": 0.29598654694855214
+    },
+    "by_group": {
+      "clean/all": {
+        "loss": 0.45540661940532523,
+        "l1": 0.23429985344409943,
+        "ssim": 0.2959865592420101
+      },
+      "gaussian_blur/high": {
+        "loss": 0.45540661031020196,
+        "l1": 0.23429984785616398,
+        "ssim": 0.29598657228052616
+      },
+      "gaussian_blur/low": {
+        "loss": 0.45540660537657385,
+        "l1": 0.23429985344409943,
+        "ssim": 0.2959865890443325
+      },
+      "gaussian_blur/medium": {
+        "loss": 0.4554065720582894,
+        "l1": 0.23429985344409943,
+        "ssim": 0.2959866598248482
+      },
+      "rectangular_occlusion/high": {
+        "loss": 0.45540662773708984,
+        "l1": 0.23429984599351883,
+        "ssim": 0.295986533164978
+      },
+      "rectangular_occlusion/low": {
+        "loss": 0.45540662028212214,
+        "l1": 0.23429985344409943,
+        "ssim": 0.29598655737936497
+      },
+      "rectangular_occlusion/medium": {
+        "loss": 0.45540661151415257,
+        "l1": 0.23429985344409943,
+        "ssim": 0.29598657600581646
+      },
+      "salt_and_pepper/high": {
+        "loss": 0.4554066793590592,
+        "l1": 0.23429984413087368,
+        "ssim": 0.2959864214062691
+      },
+      "salt_and_pepper/low": {
+        "loss": 0.45540668319340083,
+        "l1": 0.23429984971880913,
+        "ssim": 0.2959864195436239
+      },
+      "salt_and_pepper/medium": {
+        "loss": 0.45540660395452076,
+        "l1": 0.23429984413087368,
+        "ssim": 0.2959865815937519
+      }
+    }
+  },
+  "classification_accuracy": 0.3,
+  "classification_confusion_matrix": [
+    [
+      0,
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      0,
+      24,
+      0
+    ]
+  ],
+  "classification_normalized_confusion_matrix": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "classifier_mistake_count": 56,
+  "classifier_mistakes_causing_restoration_failures": [
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_201.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24791783094406128,
+        0.23832687735557556,
+        0.25924697518348694,
+        0.25450828671455383
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.5283663511560903,
+        "l1": 0.281721830368042,
+        "ssim": 0.19431282579898834
+      },
+      "loss_increase": 0.5283663511560903
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_206.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2439182698726654,
+        0.2380407750606537,
+        0.2640269994735718,
+        0.25401392579078674
+      ],
+      "oracle": {
+        "loss": 1.0381275997635779e-06,
+        "l1": 0.0,
+        "ssim": 0.9999977946281433
+      },
+      "predicted": {
+        "loss": 0.512643468112902,
+        "l1": 0.3341616690158844,
+        "ssim": 0.2866761386394501
+      },
+      "loss_increase": 0.5126424299853022
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_20.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2454490214586258,
+        0.2382868230342865,
+        0.26261940598487854,
+        0.25364476442337036
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.470186873910041,
+        "l1": 0.28843721747398376,
+        "ssim": 0.32545843720436096
+      },
+      "loss_increase": 0.470186873910041
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24716787040233612,
+        0.23847627639770508,
+        0.26001521944999695,
+        0.25434058904647827
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4556697013769173,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075354635715485
+      },
+      "loss_increase": 0.4556697013769173
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_202.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24667882919311523,
+        0.23834165930747986,
+        0.26068049669265747,
+        0.25429895520210266
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4462855948365325,
+        "l1": 0.18680936098098755,
+        "ssim": 0.26196593046188354
+      },
+      "loss_increase": 0.4462855948365325
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_210.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24600766599178314,
+        0.23830056190490723,
+        0.26180803775787354,
+        0.2538837194442749
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.41619789600691337,
+        "l1": 0.2729509472846985,
+        "ssim": 0.4227388799190521
+      },
+      "loss_increase": 0.41619789600691337
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_207.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24555137753486633,
+        0.2384129762649536,
+        0.2621864378452301,
+        0.25384917855262756
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4148062420725329,
+        "l1": 0.1791139394044876,
+        "ssim": 0.3201873302459717
+      },
+      "loss_increase": 0.4148062420725329
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_204.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24679383635520935,
+        0.23839204013347626,
+        0.2609409689903259,
+        0.25387313961982727
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.3990968277706722,
+        "l1": 0.14553026854991913,
+        "ssim": 0.31579938530921936
+      },
+      "loss_increase": 0.3990968277706722
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2471671998500824,
+        0.23847869038581848,
+        0.2600131332874298,
+        0.2543410062789917
+      ],
+      "oracle": {
+        "loss": 0.45566401964236924,
+        "l1": 0.18566496670246124,
+        "ssim": 0.24075591564178467
+      },
+      "predicted": {
+        "loss": 0.45566970839129306,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075353145599365
+      },
+      "loss_increase": 5.688748923815545e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2471671998500824,
+        0.23847869038581848,
+        0.2600131332874298,
+        0.2543410062789917
+      ],
+      "oracle": {
+        "loss": 0.45566401964236924,
+        "l1": 0.18566496670246124,
+        "ssim": 0.24075591564178467
+      },
+      "predicted": {
+        "loss": 0.45566970839129306,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075353145599365
+      },
+      "loss_increase": 5.688748923815545e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "high",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24716788530349731,
+        0.23848670721054077,
+        0.25999370217323303,
+        0.25435173511505127
+      ],
+      "oracle": {
+        "loss": 0.45566404068549626,
+        "l1": 0.18566496670246124,
+        "ssim": 0.2407558709383011
+      },
+      "predicted": {
+        "loss": 0.4556697013769173,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075354635715485
+      },
+      "loss_increase": 5.660691421049968e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_201.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24887455999851227,
+        0.23749154806137085,
+        0.2573693096637726,
+        0.2562645673751831
+      ],
+      "oracle": {
+        "loss": 0.5283626318021891,
+        "l1": 0.2817158102989197,
+        "ssim": 0.19431395828723907
+      },
+      "predicted": {
+        "loss": 0.5283663932423444,
+        "l1": 0.281721830368042,
+        "ssim": 0.19431273639202118
+      },
+      "loss_increase": 3.761440155236606e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_201.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "high",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2479318529367447,
+        0.23831970989704132,
+        0.2592313289642334,
+        0.2545170187950134
+      ],
+      "oracle": {
+        "loss": 0.5283626756332629,
+        "l1": 0.28171584010124207,
+        "ssim": 0.1943138986825943
+      },
+      "predicted": {
+        "loss": 0.5283663792135931,
+        "l1": 0.281721830368042,
+        "ssim": 0.19431276619434357
+      },
+      "loss_increase": 3.703580330194356e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_201.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24791717529296875,
+        0.23833324015140533,
+        0.25924474000930786,
+        0.25450482964515686
+      ],
+      "oracle": {
+        "loss": 0.5283626756332629,
+        "l1": 0.28171584010124207,
+        "ssim": 0.1943138986825943
+      },
+      "predicted": {
+        "loss": 0.5283663371273389,
+        "l1": 0.281721830368042,
+        "ssim": 0.19431285560131073
+      },
+      "loss_increase": 3.66149407604599e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_202.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2466825395822525,
+        0.2383470982313156,
+        0.26067373156547546,
+        0.25429660081863403
+      ],
+      "oracle": {
+        "loss": 0.44628299366135543,
+        "l1": 0.18680542707443237,
+        "ssim": 0.2619670331478119
+      },
+      "predicted": {
+        "loss": 0.4462856088652839,
+        "l1": 0.18680936098098755,
+        "ssim": 0.26196590065956116
+      },
+      "loss_increase": 2.6152039284688122e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_202.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "high",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24675387144088745,
+        0.23831573128700256,
+        0.26057225465774536,
+        0.254358172416687
+      ],
+      "oracle": {
+        "loss": 0.4462829796326041,
+        "l1": 0.18680542707443237,
+        "ssim": 0.2619670629501343
+      },
+      "predicted": {
+        "loss": 0.4462855948365325,
+        "l1": 0.18680936098098755,
+        "ssim": 0.26196593046188354
+      },
+      "loss_increase": 2.615203928413301e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_202.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2466791421175003,
+        0.23834285140037537,
+        0.2606799900531769,
+        0.25429800152778625
+      ],
+      "oracle": {
+        "loss": 0.44628299366135543,
+        "l1": 0.18680542707443237,
+        "ssim": 0.2619670331478119
+      },
+      "predicted": {
+        "loss": 0.44628558080778113,
+        "l1": 0.18680936098098755,
+        "ssim": 0.26196596026420593
+      },
+      "loss_increase": 2.587146425703235e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_204.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "high",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24862226843833923,
+        0.23776520788669586,
+        0.2579755485057831,
+        0.2556370496749878
+      ],
+      "oracle": {
+        "loss": 0.39909632336736794,
+        "l1": 0.14552812278270721,
+        "ssim": 0.3157980442047119
+      },
+      "predicted": {
+        "loss": 0.3990968277706722,
+        "l1": 0.14553026854991913,
+        "ssim": 0.31579938530921936
+      },
+      "loss_increase": 5.044033042356233e-07
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_204.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24679210782051086,
+        0.23839280009269714,
+        0.26094090938568115,
+        0.253874272108078
+      ],
+      "oracle": {
+        "loss": 0.3990963935111247,
+        "l1": 0.14552812278270721,
+        "ssim": 0.3157978951931
+      },
+      "predicted": {
+        "loss": 0.3990968277706722,
+        "l1": 0.14553026854991913,
+        "ssim": 0.31579938530921936
+      },
+      "loss_increase": 4.342595474882138e-07
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_204.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24688562750816345,
+        0.23839233815670013,
+        0.26087284088134766,
+        0.2538492679595947
+      ],
+      "oracle": {
+        "loss": 0.3990964215686274,
+        "l1": 0.14552812278270721,
+        "ssim": 0.3157978355884552
+      },
+      "predicted": {
+        "loss": 0.3990968417994235,
+        "l1": 0.14553026854991913,
+        "ssim": 0.315799355506897
+      },
+      "loss_increase": 4.2023079610542524e-07
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "salt_and_pepper",
+      "severity": "low",
+      "true_class": 1,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24725258350372314,
+        0.2384815812110901,
+        0.25980356335639954,
+        0.25446227192878723
+      ],
+      "oracle": {
+        "loss": 0.4556693438192425,
+        "l1": 0.18567299842834473,
+        "ssim": 0.240753635764122
+      },
+      "predicted": {
+        "loss": 0.4556697364487957,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075347185134888
+      },
+      "loss_increase": 3.9262955320307213e-07
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "salt_and_pepper",
+      "severity": "medium",
+      "true_class": 1,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2471325397491455,
+        0.23844586312770844,
+        0.26008111238479614,
+        0.2543405592441559
+      ],
+      "oracle": {
+        "loss": 0.45566938503308674,
+        "l1": 0.18567298352718353,
+        "ssim": 0.24075353145599365
+      },
+      "predicted": {
+        "loss": 0.4556697215476345,
+        "l1": 0.1856735795736313,
+        "ssim": 0.24075348675251007
+      },
+      "loss_increase": 3.365145477829401e-07
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "salt_and_pepper",
+      "severity": "high",
+      "true_class": 1,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24700774252414703,
+        0.23861053586006165,
+        0.25968843698501587,
+        0.2546932101249695
+      ],
+      "oracle": {
+        "loss": 0.4556693499612084,
+        "l1": 0.18567298352718353,
+        "ssim": 0.24075360596179962
+      },
+      "predicted": {
+        "loss": 0.45566962334637506,
+        "l1": 0.1856735795736313,
+        "ssim": 0.24075369536876678
+      },
+      "loss_increase": 2.7338516667141377e-07
+    }
+  ],
+  "largest_classifier_mistakes": [
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_201.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24791783094406128,
+        0.23832687735557556,
+        0.25924697518348694,
+        0.25450828671455383
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.5283663511560903,
+        "l1": 0.281721830368042,
+        "ssim": 0.19431282579898834
+      },
+      "loss_increase": 0.5283663511560903
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_206.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2439182698726654,
+        0.2380407750606537,
+        0.2640269994735718,
+        0.25401392579078674
+      ],
+      "oracle": {
+        "loss": 1.0381275997635779e-06,
+        "l1": 0.0,
+        "ssim": 0.9999977946281433
+      },
+      "predicted": {
+        "loss": 0.512643468112902,
+        "l1": 0.3341616690158844,
+        "ssim": 0.2866761386394501
+      },
+      "loss_increase": 0.5126424299853022
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_20.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2454490214586258,
+        0.2382868230342865,
+        0.26261940598487854,
+        0.25364476442337036
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.470186873910041,
+        "l1": 0.28843721747398376,
+        "ssim": 0.32545843720436096
+      },
+      "loss_increase": 0.470186873910041
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24716787040233612,
+        0.23847627639770508,
+        0.26001521944999695,
+        0.25434058904647827
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4556697013769173,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075354635715485
+      },
+      "loss_increase": 0.4556697013769173
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_202.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24667882919311523,
+        0.23834165930747986,
+        0.26068049669265747,
+        0.25429895520210266
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4462855948365325,
+        "l1": 0.18680936098098755,
+        "ssim": 0.26196593046188354
+      },
+      "loss_increase": 0.4462855948365325
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_210.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24600766599178314,
+        0.23830056190490723,
+        0.26180803775787354,
+        0.2538837194442749
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.41619789600691337,
+        "l1": 0.2729509472846985,
+        "ssim": 0.4227388799190521
+      },
+      "loss_increase": 0.41619789600691337
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_207.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24555137753486633,
+        0.2384129762649536,
+        0.2621864378452301,
+        0.25384917855262756
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.4148062420725329,
+        "l1": 0.1791139394044876,
+        "ssim": 0.3201873302459717
+      },
+      "loss_increase": 0.4148062420725329
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_204.jpg",
+      "corruption": "clean",
+      "severity": "all",
+      "true_class": 0,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.24679383635520935,
+        0.23839204013347626,
+        0.2609409689903259,
+        0.25387313961982727
+      ],
+      "oracle": {
+        "loss": 0.0,
+        "l1": 0.0,
+        "ssim": 1.0
+      },
+      "predicted": {
+        "loss": 0.3990968277706722,
+        "l1": 0.14553026854991913,
+        "ssim": 0.31579938530921936
+      },
+      "loss_increase": 0.3990968277706722
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2471671998500824,
+        0.23847869038581848,
+        0.2600131332874298,
+        0.2543410062789917
+      ],
+      "oracle": {
+        "loss": 0.45566401964236924,
+        "l1": 0.18566496670246124,
+        "ssim": 0.24075591564178467
+      },
+      "predicted": {
+        "loss": 0.45566970839129306,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075353145599365
+      },
+      "loss_increase": 5.688748923815545e-06
+    },
+    {
+      "image_path": "oxford-iiit-pet\\images\\Abyssinian_205.jpg",
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "true_class": 3,
+      "predicted_class": 2,
+      "predicted_class_name": "gaussian_blur",
+      "probabilities": [
+        0.2471671998500824,
+        0.23847869038581848,
+        0.2600131332874298,
+        0.2543410062789917
+      ],
+      "oracle": {
+        "loss": 0.45566401964236924,
+        "l1": 0.18566496670246124,
+        "ssim": 0.24075591564178467
+      },
+      "predicted": {
+        "loss": 0.45566970839129306,
+        "l1": 0.18567359447479248,
+        "ssim": 0.24075353145599365
+      },
+      "loss_increase": 5.688748923815545e-06
+    }
+  ]
+}

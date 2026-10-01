@@ -1,0 +1,31 @@
+{
+  "checkpoint": "task1_universal\\checkpoints\\universal_autoencoder_best.pt",
+  "onnx_model": "task1_universal\\checkpoints\\universal_autoencoder.onnx",
+  "input_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "pytorch_output_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "onnx_output_shape": [
+    1,
+    3,
+    64,
+    64
+  ],
+  "opset_version": 17,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "max_absolute_difference": 1.1920928955078125e-07,
+  "mean_absolute_difference": 9.609114393072105e-09,
+  "rtol": 0.0001,
+  "atol": 1e-05,
+  "allclose": true
+}

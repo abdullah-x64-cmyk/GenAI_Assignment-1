@@ -1,0 +1,93 @@
+{
+  "checkpoint": "task1_universal\\checkpoints\\universal_autoencoder_best.pt",
+  "manifest": "data\\oxford_iiit_pet_splits\\test_corruption_manifest.json",
+  "device": "cpu",
+  "image_size": 64,
+  "max_per_group": 16,
+  "metrics": {
+    "clean/all": {
+      "corruption": "clean",
+      "severity": "all",
+      "sample_count": 16,
+      "loss": 0.270236149443263,
+      "l1": 0.23849220108240843,
+      "ssim": 0.2619222570210695
+    },
+    "gaussian_blur/high": {
+      "corruption": "gaussian_blur",
+      "severity": "high",
+      "sample_count": 16,
+      "loss": 0.27023614417653097,
+      "l1": 0.23849220108240843,
+      "ssim": 0.26192233990877867
+    },
+    "gaussian_blur/low": {
+      "corruption": "gaussian_blur",
+      "severity": "low",
+      "sample_count": 16,
+      "loss": 0.27023614827523335,
+      "l1": 0.23849220015108585,
+      "ssim": 0.2619222616776824
+    },
+    "gaussian_blur/medium": {
+      "corruption": "gaussian_blur",
+      "severity": "medium",
+      "sample_count": 16,
+      "loss": 0.27023614491766346,
+      "l1": 0.23849219921976328,
+      "ssim": 0.26192230079323053
+    },
+    "rectangular_occlusion/high": {
+      "corruption": "rectangular_occlusion",
+      "severity": "high",
+      "sample_count": 16,
+      "loss": 0.2702361463379058,
+      "l1": 0.23849219921976328,
+      "ssim": 0.26192227844148874
+    },
+    "rectangular_occlusion/low": {
+      "corruption": "rectangular_occlusion",
+      "severity": "low",
+      "sample_count": 16,
+      "loss": 0.2702361497236412,
+      "l1": 0.238492202013731,
+      "ssim": 0.2619222663342953
+    },
+    "rectangular_occlusion/medium": {
+      "corruption": "rectangular_occlusion",
+      "severity": "medium",
+      "sample_count": 16,
+      "loss": 0.27023614627872905,
+      "l1": 0.23849219921976328,
+      "ssim": 0.2619222793728113
+    },
+    "salt_and_pepper/high": {
+      "corruption": "salt_and_pepper",
+      "severity": "high",
+      "sample_count": 16,
+      "loss": 0.2702361479356784,
+      "l1": 0.23849219921976328,
+      "ssim": 0.26192225329577923
+    },
+    "salt_and_pepper/low": {
+      "corruption": "salt_and_pepper",
+      "severity": "low",
+      "sample_count": 16,
+      "loss": 0.2702361479948552,
+      "l1": 0.23849219921976328,
+      "ssim": 0.26192225236445665
+    },
+    "salt_and_pepper/medium": {
+      "corruption": "salt_and_pepper",
+      "severity": "medium",
+      "sample_count": 16,
+      "loss": 0.27023614753410086,
+      "l1": 0.238492202013731,
+      "ssim": 0.26192230079323053
+    }
+  },
+  "representative_examples": 12,
+  "failure_cases": 4,
+  "representative_examples_dir": "reports\\task1_evaluation\\representative_examples",
+  "failure_cases_dir": "reports\\task1_evaluation\\failure_cases"
+}

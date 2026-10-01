@@ -1,0 +1,21 @@
+{
+  "checkpoint": "task3_soft_moe\\checkpoints\\soft_moe_best.pt",
+  "history": [
+    {
+      "stage": "gate_warmup",
+      "epoch": 1,
+      "loss": 0.47525307536125183,
+      "reconstruction_loss": 0.35120588541030884,
+      "classification_loss": 1.2404719591140747,
+      "experts_frozen": true
+    },
+    {
+      "stage": "joint_finetune",
+      "epoch": 2,
+      "loss": 0.43906649947166443,
+      "reconstruction_loss": 0.3326730728149414,
+      "classification_loss": 1.0639342069625854,
+      "experts_frozen": false
+    }
+  ]
+}

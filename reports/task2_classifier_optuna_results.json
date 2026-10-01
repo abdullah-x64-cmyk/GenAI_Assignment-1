@@ -1,0 +1,431 @@
+{
+  "search_space": {
+    "learning_rate": "float [1e-4, 1e-3], log scale",
+    "batch_size": "categorical [8, 16, 32]",
+    "channels": "categorical [(16, 32, 64), (32, 64, 128), (48, 96, 192)]",
+    "dropout": "float [0.0, 0.5]",
+    "weight_decay": "float [1e-6, 1e-3], log scale"
+  },
+  "number_of_trials_requested": 3,
+  "number_of_completed_trials": 3,
+  "epochs_per_trial": 1,
+  "image_size": 64,
+  "max_train_batches": 4,
+  "max_val_batches": 4,
+  "best_trial": 2,
+  "best_macro_f1": 0.14210526315789473,
+  "best_parameters": {
+    "learning_rate": 0.0002703616066662003,
+    "batch_size": 16,
+    "channels": [
+      48,
+      96,
+      192
+    ],
+    "dropout": 0.3925879806965068,
+    "weight_decay": 3.972110727381911e-06
+  },
+  "best_validation_metrics": {
+    "loss": 1.3834345936775208,
+    "accuracy": 0.25,
+    "macro_precision": 0.18333333333333335,
+    "macro_recall": 0.25,
+    "macro_f1": 0.14210526315789473,
+    "per_class": {
+      "clean": {
+        "precision": 0.23333333333333334,
+        "recall": 0.875,
+        "f1": 0.3684210526315789,
+        "support": 16
+      },
+      "salt_and_pepper": {
+        "precision": 0.5,
+        "recall": 0.125,
+        "f1": 0.2,
+        "support": 16
+      },
+      "gaussian_blur": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 16
+      },
+      "occlusion": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 16
+      }
+    },
+    "confusion_matrix": [
+      [
+        14,
+        2,
+        0,
+        0
+      ],
+      [
+        14,
+        2,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        0
+      ]
+    ],
+    "normalized_confusion_matrix": [
+      [
+        0.875,
+        0.125,
+        0.0,
+        0.0
+      ],
+      [
+        0.875,
+        0.125,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "sample_count": 64
+  },
+  "trials": [
+    {
+      "number": 0,
+      "state": "COMPLETE",
+      "value": 0.1,
+      "params": {
+        "learning_rate": 0.00023688639503640813,
+        "batch_size": 8,
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "dropout": 0.4330880728874676,
+        "weight_decay": 6.358358856676247e-05
+      },
+      "user_attrs": {
+        "train_loss": 1.2998378574848175,
+        "validation": {
+          "loss": 1.3854516744613647,
+          "accuracy": 0.25,
+          "macro_precision": 0.0625,
+          "macro_recall": 0.25,
+          "macro_f1": 0.1,
+          "per_class": {
+            "clean": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support": 8
+            },
+            "salt_and_pepper": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 8
+            },
+            "gaussian_blur": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 8
+            },
+            "occlusion": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 8
+            }
+          },
+          "confusion_matrix": [
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              0,
+              0
+            ]
+          ],
+          "normalized_confusion_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "sample_count": 32
+        }
+      }
+    },
+    {
+      "number": 1,
+      "state": "COMPLETE",
+      "value": 0.1,
+      "params": {
+        "learning_rate": 0.0005105903209394755,
+        "batch_size": 16,
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "dropout": 0.15212112147976886,
+        "weight_decay": 3.752055855124284e-05
+      },
+      "user_attrs": {
+        "train_loss": 1.2465568482875824,
+        "validation": {
+          "loss": 1.384544551372528,
+          "accuracy": 0.25,
+          "macro_precision": 0.0625,
+          "macro_recall": 0.25,
+          "macro_f1": 0.1,
+          "per_class": {
+            "clean": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 16
+            },
+            "salt_and_pepper": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support": 16
+            },
+            "gaussian_blur": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 16
+            },
+            "occlusion": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 16
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0
+            ],
+            [
+              0,
+              16,
+              0,
+              0
+            ]
+          ],
+          "normalized_confusion_matrix": [
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "sample_count": 64
+        }
+      }
+    },
+    {
+      "number": 2,
+      "state": "COMPLETE",
+      "value": 0.14210526315789473,
+      "params": {
+        "learning_rate": 0.0002703616066662003,
+        "batch_size": 16,
+        "channels": [
+          48,
+          96,
+          192
+        ],
+        "dropout": 0.3925879806965068,
+        "weight_decay": 3.972110727381911e-06
+      },
+      "user_attrs": {
+        "train_loss": 1.2712149620056152,
+        "validation": {
+          "loss": 1.3834345936775208,
+          "accuracy": 0.25,
+          "macro_precision": 0.18333333333333335,
+          "macro_recall": 0.25,
+          "macro_f1": 0.14210526315789473,
+          "per_class": {
+            "clean": {
+              "precision": 0.23333333333333334,
+              "recall": 0.875,
+              "f1": 0.3684210526315789,
+              "support": 16
+            },
+            "salt_and_pepper": {
+              "precision": 0.5,
+              "recall": 0.125,
+              "f1": 0.2,
+              "support": 16
+            },
+            "gaussian_blur": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 16
+            },
+            "occlusion": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 16
+            }
+          },
+          "confusion_matrix": [
+            [
+              14,
+              2,
+              0,
+              0
+            ],
+            [
+              14,
+              2,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0,
+              0
+            ],
+            [
+              16,
+              0,
+              0,
+              0
+            ]
+          ],
+          "normalized_confusion_matrix": [
+            [
+              0.875,
+              0.125,
+              0.0,
+              0.0
+            ],
+            [
+              0.875,
+              0.125,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "sample_count": 64
+        }
+      }
+    }
+  ]
+}
